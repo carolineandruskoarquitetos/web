@@ -1,5 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+
 import { Header } from "@/components";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -79,6 +81,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
