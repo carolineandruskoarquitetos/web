@@ -1,7 +1,6 @@
 import Link from "next/link";
 import InstagramIcon from "./icons/instagram";
-
-const INSTAGRAM_URL = "https://www.instagram.com/carolineandrusko/";
+import { INSTAGRAM_URL } from "@/constants";
 
 export function InstagramLink() {
   return (
