@@ -4,12 +4,12 @@ const architects = [
   {
     firstName: "JULIA",
     lastName: "RAEDER",
-    imageUrl: "/images/equipe/julia-raeder.jpg",
+    imageUrl: "/images/equipe/julia-raeder.webp",
   },
   {
     firstName: "THAISA",
     lastName: "COMASSETTO",
-    imageUrl: "/images/equipe/thaisa-comasseto.jpg",
+    imageUrl: "/images/equipe/thaisa-comasseto.webp",
   },
   {
     firstName: "BRUNA",
@@ -73,7 +73,7 @@ export default function EquipePage() {
         {/* Image container */}
         <div className="relative  h-fit flex-shrink-0 order-first md:order-last">
           <Image
-            src="/images/equipe/caroline-andrusko.png"
+            src="/images/equipe/caroline-andrusko.webp"
             alt="Profile"
             width={192 * 2}
             height={288 * 2}
@@ -115,7 +115,7 @@ export default function EquipePage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="relative aspect-[3/2]">
           <Image
-            src="/images/equipe/01-esq-externa.jpg"
+            src="/images/equipe/externa.webp"
             alt="Office exterior"
             fill
             className="object-cover"
@@ -123,7 +123,7 @@ export default function EquipePage() {
         </div>
         <div className="relative aspect-[3/2]">
           <Image
-            src="/images/equipe/02-dir-interna.jpg"
+            src="/images/equipe/interna.webp"
             alt="Office interior"
             fill
             className="object-cover"
