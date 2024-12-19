@@ -85,7 +85,6 @@ export const comercialCorporativoProjectDetails: ProjectDetails[] = [
       "/images/projetos/corporativo/linhares/detalhes/09.webp",
       "/images/projetos/corporativo/linhares/detalhes/10.webp",
       "/images/projetos/corporativo/linhares/detalhes/11.webp",
-      "/images/projetos/corporativo/linhares/detalhes/12.webp",
     ],
     location: "Curitiba, PR",
     status: "Obra Concluída",

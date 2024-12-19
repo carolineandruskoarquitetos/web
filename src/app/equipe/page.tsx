@@ -4,30 +4,29 @@ const architects = [
   {
     firstName: "JULIA",
     lastName: "RAEDER",
-    imageUrl: "/images/equipe/julia-raeder.webp",
+    imageUrl: "/images/equipe/julia-raeder-bw.jpg",
+    zoom: 1.05,
   },
   {
     firstName: "THAISA",
     lastName: "COMASSETTO",
-    imageUrl: "/images/equipe/thaisa-comasseto.webp",
+    imageUrl: "/images/equipe/thaisa-comasseto-bw.jpg",
   },
   {
     firstName: "BRUNA",
     lastName: "LIGESKI",
-    // TODO: Update bruna's image
-    // imageUrl: "/images/equipe/bruna-ligeski.jpg",
+    imageUrl: "/images/equipe/bruna-ligeski.jpg",
+    zoom: 1.12,
   },
-  // TODO: Update henrique's image
   {
     firstName: "HENRIQUE",
     lastName: "DRANSFELD",
-    // imageUrl: "/images/equipe/henrique-oramsfeld.jpg",
+    imageUrl: "/images/equipe/henrique-dransfeld.jpg",
   },
-  // TODO: Update gabriel's image
   {
     firstName: "GABRIEL",
     lastName: "LUTZ",
-    // imageUrl: "/images/equipe/gabriel-lutz.jpg",
+    imageUrl: "/images/equipe/gabriel-lutz.jpg",
   },
 ];
 
@@ -38,36 +37,25 @@ export default function EquipePage() {
       <div className="flex flex-col justify-center md:flex-row gap-8 md:gap-12 mb-16">
         <div className="flex-1 space-y-4 md:space-y-6 text-stone-500 max-w-[520px]">
           <p>
-            Mestre em Gestão e Graduada em Arquitetura e Urbanismo pela
-            Pontifícia Universidade Católica do Paraná, em seu curriculum
-            experiência de projetos desde sua concepção à finalização da obra.
+            Mestre em Gestão e graduada em Arquitetura e Urbanismo pela
+            Pontifícia Universidade Católica do Paraná (PUC/PR), Caroline
+            Andrusko traçou um caminho autoral em quase 20 anos de atuação. São
+            mais de 80.000m² projetados entre casas, apartamentos, ambientes
+            corporativos, lojas, restaurantes e mostras de arquitetura.
           </p>
           <p>
-            O contato contínuo com as tendências mundiais, através de feiras,
-            viagens e pesquisas, aliado a um planejamento estratégico, traduzem
-            na arte do projetar o equilíbrio entre a forma e a função,
-            garantindo a atemporalidade aos espaços.
+            Com foco nas pessoas, se especializou em atender aos desejos de cada
+            cliente de maneira personalizada, e tem projetos executados no
+            Brasil e no exterior.
           </p>
           <p>
-            Seus projetos são inteligentes, práticos e harmônicos, com perfeitas
-            soluções técnicas de criação para um resultado de bem-estar e
-            satisfação.
-          </p>
-          <p>
-            Mestre em Gestão e Graduada em Arquitetura e Urbanismo pela
-            Pontifícia Universidade Católica do Paraná, em seu curriculum
-            experiência de projetos desde sua concepção à finalização da obra.
-          </p>
-          <p>
-            O contato contínuo com as tendências mundiais, através de feiras,
-            viagens e pesquisas, aliado a um planejamento estratégico, traduzem
-            na arte do projetar o equilíbrio entre a forma e a função,
-            garantindo a atemporalidade aos espaços.
-          </p>
-          <p>
-            Seus projetos são inteligentes, práticos e harmônicos, com perfeitas
-            soluções técnicas de criação para um resultado de bem-estar e
-            satisfação.
+            Mais que intuição, Carol Andrusko vive a arquitetura. O contato
+            contínuo com as tendências mundiais, através de feiras, viagens e
+            pesquisas, aliado a um planejamento estratégico, traduzem na arte do
+            projetar o equilíbrio entre a forma e a função, harmonia e
+            praticidade, conforto e pertencimento, garantindo a atemporalidade
+            aos espaços e resultados de bem-estar e satisfação conforme a
+            necessidade de cada cliente.
           </p>
         </div>
         {/* Image container */}
@@ -92,12 +80,16 @@ export default function EquipePage() {
         {architects.map((architect) => (
           <div key={architect.firstName} className="w-[250px]">
             {architect.imageUrl ? (
-              <div className="relative w-full h-[380px] mb-2">
+              <div className="relative w-full h-[380px] mb-2 overflow-hidden">
                 <Image
                   src={architect.imageUrl}
                   alt={architect.firstName}
                   fill
                   className="object-cover"
+                  style={{
+                    objectPosition: "center",
+                    scale: architect.zoom || 1,
+                  }}
                 />
               </div>
             ) : (

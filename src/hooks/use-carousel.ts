@@ -5,7 +5,7 @@ export function useCarousel(
   current: number,
   setCurrent: (value: React.SetStateAction<number>) => void
 ) {
-  const timerRef = useRef<NodeJS.Timeout>();
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const resetTimer = useCallback(() => {
     if (timerRef.current) {
