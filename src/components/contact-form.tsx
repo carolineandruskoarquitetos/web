@@ -32,7 +32,15 @@ export function ContactForm() {
         },
       });
 
-      if (!response.ok) throw new Error("Failed to send message");
+      if (!response.ok) {
+        toast({
+          title: "Erro ao enviar mensagem.",
+          description:
+            "Ocorreu um problema ao enviar sua mensagem. Tente novamente mais tarde.",
+          variant: "destructive",
+        });
+        return; // Exit the function early
+      }
 
       // Reset form using ref
       if (formRef.current) {
@@ -41,7 +49,7 @@ export function ContactForm() {
 
       toast({
         title: "Mensagem enviada com sucesso!",
-        description: "Obrigado pelo contato!",
+        description: "Obrigada pelo contato!",
       });
     } catch (error) {
       console.error("Failed to send message:", error);

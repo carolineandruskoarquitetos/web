@@ -1,0 +1,93 @@
+import { Meta } from "@storybook/blocks";
+import Image from "next/image";
+
+<Meta title="Caroline Andrusko Architects" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # Caroline Andrusko Architects
+
+    This Storybook contains the component library for Caroline Andrusko Architects website. The components are built using Next.js, TypeScript, and Tailwind CSS.
+  </div>
+  
+  <div className="sb-section">
+    <div className="sb-section-item">
+      <h4 className="sb-section-item-heading">Core Components</h4>
+      <p className="sb-section-item-paragraph">
+        The website features several key components:
+        - Contact Form
+        - Project Gallery
+        - Team Member Cards
+        - Email Templates
+        - Navigation Header
+      </p>
+    </div>
+    
+    <div className="sb-section-item">
+      <h4 className="sb-section-item-heading">Design System</h4>
+      <p className="sb-section-item-paragraph">
+        The design system uses a neutral color palette based on Stone and follows a minimalist aesthetic suitable for an architecture firm.
+      </p>
+      <div className="color-palette">
+        <div className="color-item" style={{ backgroundColor: "#575556" }}>Primary</div>
+        <div className="color-item" style={{ backgroundColor: "#89817E" }}>Secondary</div>
+        <div className="color-item" style={{ backgroundColor: "#A4A09F" }}>Tertiary</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+{`
+  .sb-container {
+    margin-bottom: 48px;
+  }
+
+  .sb-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .sb-section-title {
+    margin-bottom: 32px;
+  }
+
+  .sb-section-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sb-section-item-heading {
+    padding-top: 20px !important;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+  }
+
+  .sb-section-item-paragraph {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .color-palette {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .color-item {
+    padding: 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .sb-section {
+      flex-direction: column;
+    }
+  }
+`}
+</style>

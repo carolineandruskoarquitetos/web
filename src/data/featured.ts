@@ -31,4 +31,34 @@ export const featuredProjects: Project[] = [
     image: "/images/featured/05-res-arc.webp",
     category: Category.RESIDENCIAL,
   },
+  {
+    id: "app-litoral-mgg",
+    title: "APARTAMENTO LITORAL MGG",
+    image: "/images/featured/06-app-litoral-mgg.webp",
+    category: Category.RESIDENCIAL,
+  },
+  {
+    id: "linhares-valentini",
+    title: "LINHARES VALENTINI",
+    image: "/images/featured/07-linhares-valentini.webp",
+    category: Category.COMERCIAL_E_CORPORATIVO,
+  },
+  {
+    id: "apt-frb",
+    title: "APARTAMENTO FRB",
+    image: "/images/featured/08-apt-frb.webp",
+    category: Category.RESIDENCIAL,
+  },
+  {
+    id: "res-erg",
+    title: "RESIDÊNCIA ERG",
+    image: "/images/featured/09-res-erg.webp",
+    category: Category.RESIDENCIAL,
+  },
+  {
+    id: "res-ajb",
+    title: "RESIDÊNCIA AJB",
+    image: "/images/featured/10-res-ajb.webp",
+    category: Category.RESIDENCIAL,
+  },
 ];
