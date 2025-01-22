@@ -107,17 +107,6 @@ export const ContactEmailTemplate: React.FC<
               {message}
             </Text>
           </div>
-          <Img
-            src="https://carolineandrusko.com.br/wp-content/uploads/2017/11/logo_menu-2.png"
-            alt="Caroline Andrusko Logo"
-            width={240}
-            height={80}
-            style={{
-              display: "block",
-              margin: "2rem auto 0",
-              maxWidth: "100%",
-            }}
-          />
         </Section>
 
         <Section
