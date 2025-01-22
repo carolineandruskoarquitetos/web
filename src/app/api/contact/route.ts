@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { ContactEmailTemplate } from "@/components/email-template";
-// import { EMAIL } from "@/constants";
+import { EMAIL } from "@/constants";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -20,8 +20,7 @@ export async function POST(request: Request) {
 
     const data = await resend.emails.send({
       from: "onboarding@resend.dev",
-      // to: [EMAIL, "diegovfeder@gmail.com"],
-      to: ["diegovfeder@gmail.com"],
+      to: [EMAIL, "diegovfeder@gmail.com"],
       replyTo: email,
       subject: `Novo contato do site - ${name}`,
       react: ContactEmailTemplate({
