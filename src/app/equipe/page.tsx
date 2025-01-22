@@ -8,11 +8,6 @@ const architects = [
     zoom: 1.05,
   },
   {
-    firstName: "THAISA",
-    lastName: "COMASSETTO",
-    imageUrl: "/images/equipe/thaisa-comasseto-bw.jpg",
-  },
-  {
     firstName: "BRUNA",
     lastName: "LIGESKI",
     imageUrl: "/images/equipe/bruna-ligeski.jpg",
