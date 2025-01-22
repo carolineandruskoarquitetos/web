@@ -5,7 +5,6 @@ import {
   Text,
   Section,
   Heading,
-  Img,
 } from "@react-email/components";
 
 interface ContactEmailTemplateProps {
